@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arduino01</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="index2.js"></script>
+    </head>
+    <body>
+        <main>
+            <form id="form" action="http://192.168.1.48:8000/led" method="GET" id="light-controller">
+                <label for="off">
+                    <input id="off" type="radio" name="mode" value="off" checked>
+                    Off
+                </label>
+                <label for="on">
+                    <input id="on" type="radio" name="mode" value="on">
+                    On
+                </label>
+                <label for="blink">
+                    <input id="blink" type="radio" name="mode" value="blink">
+                    Blink
+                </label>
+                <label for="stop">
+                    <input id="stop" type="radio" name="mode" value="stop">
+                    Stop
+                </label>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+
+            <div id="open-tab">
+                <input type="text" placeholder="url">
+                <butoon class="btn">
+                    Open tab
+                </butoon>
+            </div>
+        </main>
+    </body>
+</html>
